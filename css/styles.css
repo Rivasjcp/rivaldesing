@@ -112,7 +112,7 @@ body{
     margin-right: 50px;
     font-size: 70px;
     grid-column: 2/3;
-    
+    grid-row: 2/3;
 }
 
 .presentacion__grid{
@@ -129,6 +129,7 @@ background-size: cover
     margin-left: 150px;
     margin-top: 50px;
     grid-column: 1/3;
+    grid-row: 1/2;
 }
 
 .letraNaranja{
