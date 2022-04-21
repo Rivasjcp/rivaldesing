@@ -272,14 +272,54 @@ margin-top:100px;
 /* footer */
 
 .footer{
-    display:block;
-    height:550px;
-    line-height:50px;
+    height:150px;
     background:white;
     color:black;
-    text-align:center;
     width:100%;
     margin-top: 50px;
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-areas:"logoR vendemosD contactanosD"
+                        "logoR redesS redesS"
+                        "copyright copyright copyright";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:1fr 1fr 30px;
+}
+
+.logoR{
+    grid-area: logoR;
+    justify-self: center;
+    align-self: start;
+}
+
+.vendemosD{
+    grid-area: vendemosD;
+    font-size: 12px;
+    justify-self: center;
+    align-self: center;
+}
+
+.contactanosD{
+    grid-area: contactanosD;
+    font-size: 12px;
+    justify-self: center;
+    align-self: center;
+}
+
+.redesS{
+    grid-area: redesS;
+    font-size: 12px;
+    justify-self: center;
+    align-self: center;
+}
+
+.copy{
+    grid-area: copyright;
+    justify-self: center;
+    align-self: start;
+    font-size: 12px;
 }
 
 /* contacto */
