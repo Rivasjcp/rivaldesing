@@ -15,6 +15,10 @@
     src: url("../fonts/Verdana.ttf");
 }
 
+@media only screen and(max-width:360px) {
+  
+}
+
 /* index */
 
 h2,h3{
@@ -73,7 +77,6 @@ ul li:hover ul {
     position:sticky;
     top:0px;
     z-index: 1;
-    width: 100%;
 }
 
 .nav_flex{
