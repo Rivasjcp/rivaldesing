@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rival Desing</title>
     <link rel="shortcut icon" href="images/Isotipo-rival-desing-naranja1.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,42 +21,50 @@
     
 <!-- Navegador  -->
 
-<header  class="header">
-    <nav> 
+<header class="header">
+    <nav data-aos="fade-down"> 
         <ul class="nav_flex">
-            <a class="posNav" href="#inicio" title="Imagen logo horizontal"  >
+            
+            <a class="posNav orden" href="#inicio" title="Imagen logo horizontal"  >
                 <img src="images/Logo-Rival-Desing-web1.png" alt="Imagen logo horizontal" class="logoNav"> 
             </a>
-            <li>
-                <a href="#inicio">Inicio</a>
+            
+            <li class="posNav">
+                <a class="titulosNav colorNaranja"  href="#inicio">Inicio</a>
             </li>
-            <li>
-                <label for="Descubrenos">Descubrenos 
+            <li class="posNav">
+                <label class="colorNaranja titulosNav" for="Descubrenos">Descubrenos 
                     <img src="images/flecha-hacia-abajo-para-navegar.png" alt="flecha" width="9" height="9">
                 </label>
         <ul class="nav__menuSub">
-            <li class="nav__distanciaSub"><a href="#servicios">Servicios</a>
+            <div class="menuFlex">
+                <div>
+            <li><a  href="#servicios" class="titulosServ">Servicios</a>
             </li>
-            <li class="nav__distanciaSub"><a href="#quienes">¿Quienes somos?</a>
+                </div>
+                <div>
+            <li class="nav__distanciaSub"><a href="#quienes" class="titulosNav">¿Quienes somos?</a>
             </li>
+                </div>
+            </div>
         </ul>
             </li>
-            <li class="nav__distancia">
-                <a href="pages/proyectos.html">Proyectos</a></li> 
-            <li>
-                <a href="pages/contacto.html">Contacto</a></li> 
-            <li>
-                <a href="pages/rivalidadydiseño.html">Rivalidad y Diseño</a></li>
-            <li>
-                <a href="pages/inspirate.html">Inspirate</a>
+            <li class="nav__distancia posNav distanciaP">
+                <a href="pages/proyectos.html" class="titulosNav colorNaranja ">Proyectos</a></li> 
+            <li class="posNav colorNaranja">
+                <a  href="pages/contacto.html" class="titulosNav colorNaranja " >Contacto</a></li> 
+            <li class="posNav colorNaranja">
+                <a  href="pages/rivalidadydiseño.html" class="titulosNav colorNaranja " >Rivalidad y Diseño</a></li>
+            <li class="posNav colorNaranja">
+                <a href="pages/inspirate.html" class="titulosNav" >Inspirate</a>
             </li>
 
-            <div>
-                <a title="instagram" class="nav__redesInsta" href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">
-                    <img src="images/instagram.png" alt="instagram" width="20" height="20"> 
+            <div class="orden">
+                <a  title="instagram" class="nav__redesInsta" href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">
+                    <img class="tamañoImg" src="images/instagram.png" alt="instagram" width="20" height="20"> 
                 </a>
                 <a title="facebook" href="https://www.facebook.com/jhancarlos.rivaspinto/" target="_blank">
-                    <img src="images/facebook-app-symbol.png" alt="facebook" width="20" height="20">
+                    <img class="tamañoImg" src="images/facebook-app-symbol.png" alt="facebook" width="20" height="20">
                 </a>
             </div>
         </ul>            
@@ -61,18 +74,18 @@
 <!-- Presentacion  -->
 
 <div class="presentacion__grid">
-    <img class="logo" src="images/Logo Rival Desing1.png" alt="logo rival"width="300px" height="300px">
+    <img data-aos="fade-right" class="logo" src="images/Logo Rival Desing1.png" alt="logo rival"width="300px" height="300px">
 
-    <p class="letraColorBlanco titulo__vendemos" >Vendemos <span class="letraNaranja"> ideas </span> y materializamos <span class="letraNaranja">identidades. </span></p>
+    <p data-aos="fade-left" class="letraColorBlanco titulo__vendemos" >Vendemos <span class="letraNaranja"> ideas </span> y materializamos <span class="letraNaranja">identidades. </span></p>
 
-    <button class="boton__contacto">
+    <button data-aos="flip-left" class="boton__contacto">
         <a class="contacto" href="pages/contacto.html"> Contactanos </a> 
     </button>
 
 </div>
-    <iframe class="video" width="70%" height="520" src="https://www.youtube.com/embed/2Eq4Dsi8Eig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="70%" height="520" src="https://www.youtube.com/embed/2Eq4Dsi8Eig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <p class="textoComp letraColorBlanco textoVideo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro accusamus laboriosam eum debitis vitae magnam quis quibusdam voluptate. Ducimus est nulla aut. Vero, pariatur modi. Doloribus necessitatibus error eaque vero.
+    <p  class="textoComp letraColorBlanco textoVideo" data-aos="zoom-in-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro accusamus laboriosam eum debitis vitae magnam quis quibusdam voluptate. Ducimus est nulla aut. Vero, pariatur modi. Doloribus necessitatibus error eaque vero.
     Laborum, nemo! Inventore cum expedita a ea magni architecto distinctio enim consequatur quam impedit illo accusantium quidem ex soluta nihil assumenda totam reiciendis vitae saepe numquam, asperiores ipsa esse minus?
     Commodi praesentium ipsum, quam sed quod corporis libero necessitatibus odio, quibusdam doloremque ratione a sunt dolor nemo, molestiae magnam at molestias hic repellat quaerat eligendi temporibus delectus. Explicabo, amet repellendus.
     Placeat ipsa totam dolore aliquid? Unde libero dolore voluptatem deleniti voluptate atque error! Numquam, veniam fuga quaerat quis natus laudantium nisi officiis praesentium, possimus, iure magnam. Architecto in saepe a!
@@ -83,7 +96,7 @@
 
 <div id="servicios" class="servicios">
     <div class="tServicios">
-        <h2 class="titulosGrandes letraColorBlanco " >Servicios</h2>
+        <h2 data-aos="flip-left" class="titulosGrandes letraColorBlanco " >Servicios</h2>
     </div>
         <div class="imagenDis">
             <img src="images/insertar-icono-de-imagen.png" alt="Icono de imagen" width="150" height="150">
@@ -122,34 +135,44 @@
     Dolore maiores rerum dolorum quasi nulla quibusdam saepe, iste eum eveniet veritatis optio est tempora asperiores laborum, ipsam pariatur ut, consectetur magni ipsum laudantium? Voluptatum, nesciunt modi. Deleniti, aperiam porro?</p>
     <h2 class="titulosGrandes letraColorBlanco">Equipo</h2>
     <div class="equipo">
-        <img class="equipo__imageJc" src="images/jcrivas.jpeg" alt="Jhan Rivas" width="480" height="520">
-        <span class="equipo__nombreJc letraColorBlanco">Jhan Carlos Rivas</span>
-        <p class="equipo__textoJc letraColorBlanco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nemo ratione perferendis. Incidunt distinctio molestias praesentium quos odit voluptatum, ipsum necessitatibus, eveniet nihil consequuntur nulla! Deleniti fuga aliquid natus nobis!</p>
+        <div class="equipo__imageJc">
+        <img src="images/jcrivas.jpeg" alt="Jhan Rivas" width="480" height="520">
+        </div>
+        <div class="equipo__nombreJc">
+        <span class="letraColorBlanco">Jhan Carlos Rivas</span>
+        </div>
+        <div class="equipo__textoJc">
+        <p class="letraColorBlanco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nemo ratione perferendis. Incidunt distinctio molestias praesentium quos odit voluptatum, ipsum necessitatibus, eveniet nihil consequuntur nulla! Deleniti fuga aliquid natus nobis!</p>
+        </div>
     </div>
 </section>
 
 <!-- Footer  -->
 
-<footer class="footer footer__grid">
+<footer class="footer__grid">
     <div class="logoR">
-    <img src="images/Rival desing LOGO.png" alt="Logo rival" width="150" height="150">
+    <img class="logoFooter" src="images/Rival desing LOGO.png" alt="Logo rival" width="150" height="150">
     </div>
         <div class="vendemosD">
-            <h3>Vendemos ideas y materializamos identidades</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam libero accusamus, alias natus asperiores iusto officia nihil, repellat consequuntur sint soluta laborum odio dolorem fuga et ipsum, sit veritatis!</p>
+            <h3 class="textoComp">Vendemos ideas y materializamos identidades</h3>
+            <p class="contMov">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam libero accusamus, alias natus asperiores iusto officia nihil, repellat consequuntur sint soluta laborum odio dolorem fuga et ipsum, sit veritatis!</p>
         </div>
         <div class="contactanosD">
-            <h3>Contactanos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, id!</p>
+            <h3 class="textoComp">Contactanos</h3>
+            <p class="contMov">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, id!</p>
         </div>
         <div class="redesS">
-            <h3>Redes Sociales</h3>
-            <a href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/jhancarlos.rivaspinto/" target="_blank">Facebook</a>
+            <h3 class="textoComp">Redes Sociales</h3>
+            <a class="textoComp" href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">Instagram</a>
+            <a class="textoComp" href="https://www.facebook.com/jhancarlos.rivaspinto/" target="_blank">Facebook</a>
         </div>
         <div class="copy">
-        <h3>© Rival Desing / Todos los derechos reservados.</h3>
+        <h3 class="textoComp">© Rival Desing / Todos los derechos reservados.</h3>
         </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
