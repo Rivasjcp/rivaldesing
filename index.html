@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rival Desing</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" href="images/Isotipo-rival-desing-naranja1.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +19,53 @@
 </head>
 <body id="inicio">
 
-    
+
 <!-- Navegador  -->
 
-<header class="header">
-    <nav data-aos="fade-down"> 
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#inicio" title="Imagen logo horizontal"><img src="images/Logo-Rival-Desing-web1.png" alt="Imagen logo horizontal" class="logoNav"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item me-lg-5 ms-lg-5">
+                <a class="active titulosNav colorNaranja" aria-current="page" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item dropdown me-lg-5 ms-lg-5">
+                <a class="dropdown-toggle titulosNav colorNaranja" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Descubrenos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#servicios">Servicios</a></li>
+                  <li><a class="dropdown-item" href="#quienes">¿Quienes somos?</a></li>
+                </ul>
+              </li>
+              <li class="me-lg-5 ms-lg-5">
+                <a href="pages/proyectos.html" class="titulosNav colorNaranja ">Proyectos</a></li> 
+            <li class="me-lg-5 ms-lg-5">
+                <a  href="pages/contacto.html" class="titulosNav colorNaranja " >Contacto</a></li> 
+            <li class="me-lg-5 ms-lg-5">
+                <a  href="pages/rivalidadydiseño.html" class="titulosNav colorNaranja " >Rivalidad y Diseño</a></li>
+            <li class="me-lg-5 ms-lg-5">
+                <a href="pages/inspirate.html" class="titulosNav colorNaranja" >Inspirate</a>
+            </li>  
+            </ul>
+            <div>
+                <a  title="instagram" class="nav__redesInsta" href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">
+                    <img class="tamañoImg" src="images/instagram.png" alt="instagram" width="20" height="20"> 
+                </a>
+                <a title="facebook" href="https://www.facebook.com/jhancarlos.rivaspinto/" target="_blank">
+                    <img class="tamañoImg" src="images/facebook-app-symbol.png" alt="facebook" width="20" height="20">
+                </a>
+            </div>    
+          </div>
+        </div>
+      </nav>
+    <!-- <nav data-aos="fade-down"> 
         <ul class="nav_flex">
-            
             <a class="posNav orden" href="#inicio" title="Imagen logo horizontal"  >
                 <img src="images/Logo-Rival-Desing-web1.png" alt="Imagen logo horizontal" class="logoNav"> 
             </a>
@@ -70,29 +110,85 @@
                 </a>
             </div>
         </ul>            
-    </nav>
+    </nav> -->
 </header>
 
-<!-- Presentacion  -->
+    <!-- Presentacion  -->
 
-<div class="presentacion__grid">
-    <img data-aos="fade-right" class="logo" src="images/Logo Rival Desing1.png" alt="logo rival"width="300px" height="300px">
-
-    <p data-aos="fade-left" class="letraColorBlanco titulo__vendemos" >Vendemos <span class="letraNaranja"> ideas </span> y materializamos <span class="letraNaranja">identidades. </span></p>
-
-    <button data-aos="flip-left" class="boton__contacto">
-        <a class="contacto" href="pages/contacto.html"> Contactanos </a> 
-    </button>
+    <div class="presentacion__grid container-fluid mb-5" >
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 col-md-offset-7 ">
+                <img data-aos="fade-right" class="logo" src="images/Logo Rival Desing1.png" alt="logo rival"width="300px" height="300px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-3 ">
+                <button data-aos="flip-left" class="boton__contacto">
+                <a class="contacto" href="pages/contacto.html"> Contactanos </a> 
+                </button>
+            </div>
+            <div class="col-md-7 ">
+                <p data-aos="fade-left" class="letraColorBlanco titulo__vendemos" >Vendemos <span class="letraNaranja"> ideas </span> y materializamos <span class="letraNaranja">identidades. </span></p>
+            </div>
+        </div>
+    </div>
 
 </div>
-<iframe class="video" width="70%" height="520" src="https://www.youtube.com/embed/2Eq4Dsi8Eig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<div>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <iframe class="video" width="70%" height="520" src="https://www.youtube.com/embed/2Eq4Dsi8Eig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <iframe class="video" width="70%" height="520" src="https://www.youtube.com/embed/Br8F3UfcgCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <iframe class="video" width="70%" height="520" src="https://youtube.com/embed/7zM1iWyRplc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <iframe class="video" width="70%" height="520" src="https://www.youtube.com/embed/mSyv5FkfiWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fourth slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
     <p  class="textoComp letraColorBlanco textoVideo" data-aos="zoom-in-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro accusamus laboriosam eum debitis vitae magnam quis quibusdam voluptate. Ducimus est nulla aut. Vero, pariatur modi. Doloribus necessitatibus error eaque vero.
     Laborum, nemo! Inventore cum expedita a ea magni architecto distinctio enim consequatur quam impedit illo accusantium quidem ex soluta nihil assumenda totam reiciendis vitae saepe numquam, asperiores ipsa esse minus?
     Commodi praesentium ipsum, quam sed quod corporis libero necessitatibus odio, quibusdam doloremque ratione a sunt dolor nemo, molestiae magnam at molestias hic repellat quaerat eligendi temporibus delectus. Explicabo, amet repellendus.
     Placeat ipsa totam dolore aliquid? Unde libero dolore voluptatem deleniti voluptate atque error! Numquam, veniam fuga quaerat quis natus laudantium nisi officiis praesentium, possimus, iure magnam. Architecto in saepe a!
     </p>
-
+</div>
 
 <!-- Servicios  -->
 
@@ -130,13 +226,13 @@
 
 <!-- Equipo  -->
 
-<section id="quienes">
+<div id="quienes" data-aos="flip-right" class="containter-fluid">
     <h2 data-aos="flip-left" class="titulosGrandes letraColorBlanco" >Conocenos</h2>
     <p data-aos="fade-up" class="textoComp letraColorBlanco">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, enim. Quia est dignissimos odit officia earum eveniet obcaecati officiis quibusdam excepturi, a perferendis sequi, vel blanditiis voluptas, voluptate deleniti tempora!
     Velit provident deserunt soluta corrupti quam ad ea sunt, aperiam earum, fugiat aspernatur? Deleniti, doloremque quos perspiciatis numquam blanditiis temporibus esse at illum, nesciunt pariatur dolor, error rerum officiis repellat!
     Dolore maiores rerum dolorum quasi nulla quibusdam saepe, iste eum eveniet veritatis optio est tempora asperiores laborum, ipsam pariatur ut, consectetur magni ipsum laudantium? Voluptatum, nesciunt modi. Deleniti, aperiam porro?</p>
     <h2 data-aos="flip-left" class="titulosGrandes letraColorBlanco">Equipo</h2>
-    <div data-aos="flip-right" class="equipo">
+    <!-- <div data-aos="flip-right" class="equipo">
         <div class="equipo__imageJc">
         <img src="images/jcrivas.jpeg" alt="Jhan Rivas" width="480" height="520">
         </div>
@@ -146,8 +242,53 @@
         <div class="equipo__textoJc">
         <p class="letraColorBlanco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nemo ratione perferendis. Incidunt distinctio molestias praesentium quos odit voluptatum, ipsum necessitatibus, eveniet nihil consequuntur nulla! Deleniti fuga aliquid natus nobis!</p>
         </div>
+    </div> -->
+    <div class="container-fluid">
+    <div class="row mb-5">
+        <div class="col-lg-2 ps-0 pe-0"></div>
+        <div class="card ps-0 pe-0 mb-5" style="width: 40rem;height:70rem">
+            <img src="images/jcrivas.jpeg" alt="Jhan Rivas" height="85%">
+            <div class="card-body">
+              <h5 class="card-title">Jhan Carlos Rivas</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Conoce un poco mas</a>
+            </div>
+          </div>
+        <div class="col-lg-1 ps-0 pe-0"></div>
+        <div class="card ps-0 pe-0" style="width: 40rem;height:70rem">
+            <img src="images/jcrivas.jpeg" alt="Jhan Rivas" height="85%">
+            <div class="card-body">
+              <h5 class="card-title">Jhan Carlos Rivas</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Conoce un poco mas</a>
+            </div>
+          </div>
+          <div class="col-lg-2 ps-0 pe-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 ps-0 pe-0"></div>
+            <div class="card ps-0 pe-0 mb-5" style="width: 40rem;height:70rem">
+                <img src="images/jcrivas.jpeg" alt="Jhan Rivas" height="85%">
+                <div class="card-body">
+                  <h5 class="card-title">Jhan Carlos Rivas</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Conoce un poco mas</a>
+                </div>
+              </div>
+            <div class="col-lg-1 ps-0 pe-0"></div>
+            <div class="card ps-0 pe-0" style="width: 40rem;height:70rem">
+                <img src="images/jcrivas.jpeg" alt="Jhan Rivas" height="85%">
+                <div class="card-body">
+                  <h5 class="card-title">Jhan Carlos Rivas</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Conoce un poco mas</a>
+                </div>
+              </div>
+              <div class="col-lg-2 ps-0 pe-0"></div>
+            </div>
     </div>
-</section>
+</div>
+
 
 <!-- Footer  -->
 
@@ -160,16 +301,16 @@
             <p class="contMov">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam libero accusamus, alias natus asperiores iusto officia nihil, repellat consequuntur sint soluta laborum odio dolorem fuga et ipsum, sit veritatis!</p>
         </div>
         <div class="contactanosD">
-            <h3 class="textoComp">Contactanos</h3>
+            <h3 class="texto">Contactanos</h3>
             <p class="contMov">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, id!</p>
         </div>
         <div class="redesS">
-            <h3 class="textoComp">Redes Sociales</h3>
-            <a class="textoComp" href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">Instagram</a>
-            <a class="textoComp" href="https://www.facebook.com/jhancarlos.rivaspinto/" target="_blank">Facebook</a>
+            <h3 class="texto">Redes Sociales</h3>
+            <a class="texto" href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">Instagram</a>
+            <a class="texto" href="https://www.facebook.com/jhancarlos.rivaspinto/" target="_blank">Facebook</a>
         </div>
         <div class="copy">
-        <h3 class="textoComp">© Rival Desing / Todos los derechos reservados.</h3>
+        <h3 class="texto">© Rival Desing / Todos los derechos reservados.</h3>
         </div>
 </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

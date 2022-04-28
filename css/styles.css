@@ -112,7 +112,6 @@ ul li:hover ul {
 
 body{
     background-color: black;
-    display:table
 }
 
 .titulo__vendemos{
@@ -120,23 +119,21 @@ body{
     text-shadow: 4px 4px black;
     text-align: right;
     margin-right: 50px;
-    font-size: 70px;
+    font-size: 50px;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
 .presentacion__grid{
-display:grid;
+/* display:grid;
 grid-template-rows: 380px 1fr ;
-grid-template-columns: 500px 1fr ;
+grid-template-columns: 500px 1fr ; */
 background-image: url("../images/portada.jpg");
 width: 100%;
-height: 700px;
-
+height: 800px;
 }
 
 .logo{
-    margin-left: 150px;
     margin-top: 50px;
     grid-column: 1/3;
     grid-row: 1/2;
@@ -154,8 +151,7 @@ background-color:#e93b00 ;
 border-radius: 10px;
 width: 200px;
 height: 50px;
-margin-left:40%;
-margin-top:100px;
+margin-top:50%;
 }
 
 .contacto{
@@ -212,6 +208,13 @@ margin-top:100px;
     padding-top:5px;
 }
 
+.texto{
+    font-family: "Retroica", sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    line-height:1.3; 
+}
+
 .tituloPequeño{
     text-align: center;
     font-size: 30px;
@@ -220,7 +223,7 @@ margin-top:100px;
 
 .titulosGrandes{
     text-align: center;
-    font-size: 60px;
+    font-size: 6rem;
     margin:20px;
 }
 
@@ -394,7 +397,7 @@ footer{
 
 .trabajos{
     display:grid;
-    grid-template-areas:"aTrabajos aTrabajos aTrabajos"
+    grid-template-areas:
     "tips vBrela gBrela"
     "herbaplant herbaplant herbaplant"
     "certificado certificado certificado"
@@ -402,7 +405,7 @@ footer{
     "gTriptico gRevista gRevista"
     "uniformeG uniformeG uniformeG";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px repeat(6,550px);
+    grid-template-rows: repeat(6,550px);
     grid-gap: 1px;
 }
 
@@ -483,8 +486,8 @@ footer{
         flex-direction: column;
     }
     .logoNav{
-        width: 450px;
-        height: 150px;
+        width: 140px;
+        height: 50px;
     }
     .posNav{
         align-self: flex-start;
@@ -524,8 +527,8 @@ footer{
     }
 
     .logo{
-        width:400px;
-        height: 400px;
+        width:200px;
+        height: 200px;
     }
 
     .presentacion__grid{
@@ -533,31 +536,27 @@ footer{
     }
 
     .titulo__vendemos{
-        font-size:80px;
+        font-size:3rem;
+        text-align: start;
         margin-right: 30px ;
-        margin-bottom: 50px;
-    }
-
-    .boton__contacto{
-        transform:scale(1.5) translate(20px,20px);
     }
 
     .video{
         width:90%;
-         height:820
+         height:720
     }
 
     .textoComp{
-      font-size: 50px;  
+      font-size: 2rem;  
     }
 
     .textoVideo{
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .servicios{
-        height:1650px ;
+        height:1600px ;
         display: grid;
         grid-template-areas: "tServicios tServicios tServicios"
         "imagenDis imagenDis imagenDis"
@@ -570,10 +569,10 @@ footer{
         grid-template-rows: 190px repeat(7,1fr) ;
     }
     .titulosGrandes{
-        font-size: 90px;
+        font-size: 4rem;
     }
     .tituloPequeño{
-        font-size: 60px;
+        font-size: 3rem;
     }
     .equipo{
         width: 90%;
@@ -618,5 +617,24 @@ footer{
 
     .contMov{
         display: none;
+    }
+
+    .trabajos{
+        display:grid;
+        grid-template-areas:
+        "tips tips"
+        "vBrela vBrela"
+        "gBrela gBrela"
+        "herbaplant herbaplant"
+        "certificado certificado"
+        "cGiltyle cGiltyle"
+        "lBrela lBrela"
+        "lShaw lShaw"
+        "gTriptico gTriptico"
+        "gRevista gRevista"
+        "uniformeG uniformeG";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,300px) 100px 200px repeat(6,300px);
+        grid-gap: 1px;
     }
 }
