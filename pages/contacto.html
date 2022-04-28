@@ -18,7 +18,7 @@
 
     <!-- Navegador  -->
 
-        <header class="header">
+        <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="../index.html" title="Imagen logo horizontal"><img src="../images/Logo-Rival-Desing-web1.png" alt="Imagen logo horizontal" class="logoNav"></a>
@@ -61,8 +61,91 @@
                 </div>
               </nav>
     </header>
+<div class="containter-fluid">
+    <label for="" class="letraColorBlanco titulosGrandes">Contactanos</label>
+<div class="mb-5">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label letraColorBlanco texto">Nombre y Apellido</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa nombre">
+      </div>
 
-    <form action="">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label letraColorBlanco texto">Numero de telefono</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa numero telefonico">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label letraColorBlanco texto">Correo Electronico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="@example.com">
+      </div>
+    
+
+    <div class="mb-5 mt-5">
+      <label for="" class="letraColorBlanco texto mb-2">¿Cuando quieres ser contactado?</label>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label letraColorBlanco texto" for="flexCheckDefault">
+          Mañana
+        </label>
+      </div>
+      
+      <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label letraColorBlanco texto" for="flexCheckChecked">
+          Tarde
+        </label>
+    </div>
+</div>
+
+<div class="mb-5 mt-5">
+        <div class="row">
+            <label for="" class="letraColorBlanco texto mb-2">¿Que servicio podemos ofrecerte?</label>
+        </div>
+        
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label letraColorBlanco texto" for="flexRadioDefault1">
+            Diseño Grafico
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label letraColorBlanco texto" for="flexRadioDefault2">
+            Edicion de video
+            </label>
+          </div>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label letraColorBlanco texto" for="flexRadioDefault2">
+            Ambas
+            </label>
+          </div> 
+        </div>
+
+          <div class="row">
+            <label for="" class="letraColorBlanco texto mb-2">¿Quien te recomendo nuestros servicios?</label>
+        </div>
+
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Instagram</option>
+            <option value="1">Facebook</option>
+            <option value="2">Recomendado por alguien mas</option>
+            <option value="3">Anuncio de pagina web</option>
+          </select>
+        <div class="mb-5 mt-5">
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label letraColorBlanco texto">Recomendaciones</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </div>
+        <button type="button" class="btn btn-primary btn-lg">Enviar</button>
+        <button type="button" class="btn btn-secondary btn-lg">Limpiar</button>
+</div>
+
+    <!-- <form action="">
         <fieldset>
             <legend class="letraColorBlanco titulosGrandes">Contactanos</legend>
             <input class="distanciaBloque" type="text" name="nombre" placeholder="Nombre y Apellido" required>
@@ -101,27 +184,27 @@
                 <input type="reset" value="Limpiar">
             </div>
         </fieldset>
-    </form>
+    </form> -->
 
-    <footer class="footer footer__grid">
+    <footer class="footer__grid">
         <div class="logoR">
-        <img src="../images/Rival desing LOGO.png" alt="Logo rival" width="150" height="150">
+        <img class="logoFooter" src="../images/Rival desing LOGO.png" alt="Logo rival" width="150" height="150">
         </div>
             <div class="vendemosD">
-                <h3>Vendemos ideas y materializamos identidades</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam libero accusamus, alias natus asperiores iusto officia nihil, repellat consequuntur sint soluta laborum odio dolorem fuga et ipsum, sit veritatis!</p>
+                <h3 class="textoComp">Vendemos ideas y materializamos identidades</h3>
+                <p class="contMov">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam libero accusamus, alias natus asperiores iusto officia nihil, repellat consequuntur sint soluta laborum odio dolorem fuga et ipsum, sit veritatis!</p>
             </div>
             <div class="contactanosD">
-                <h3>Contactanos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, id!</p>
+                <h3 class="texto">Contactanos</h3>
+                <p class="contMov">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, id!</p>
             </div>
             <div class="redesS">
-                <h3>Redes Sociales</h3>
-                <a href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">Instagram</a>
-                <a href="https://www.facebook.com/jhancarlos.rivaspinto/" target="_blank">Facebook</a>
+                <h3 class="texto">Redes Sociales</h3>
+                <a class="texto" href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">Instagram</a>
+                <a class="texto" href="https://www.facebook.com/jhancarlos.rivaspinto/" target="_blank">Facebook</a>
             </div>
             <div class="copy">
-            <h3>© Rival Desing / Todos los derechos reservados.</h3>
+            <h3 class="texto">© Rival Desing / Todos los derechos reservados.</h3>
             </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

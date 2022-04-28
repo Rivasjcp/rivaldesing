@@ -22,7 +22,7 @@
 
 <!-- Navegador  -->
 
-<header class="header">
+<header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#inicio" title="Imagen logo horizontal"><img src="images/Logo-Rival-Desing-web1.png" alt="Imagen logo horizontal" class="logoNav"></a>
@@ -114,21 +114,21 @@
 
     <!-- Presentacion  -->
 
-    <div class="presentacion__grid container-fluid" >
+    <div class="presentacion__grid container-fluid mb-5" >
         <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4 col-md-offset-7 order-0">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 col-md-offset-7 ">
                 <img data-aos="fade-right" class="logo" src="images/Logo Rival Desing1.png" alt="logo rival"width="300px" height="300px">
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-3 order-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-3 ">
                 <button data-aos="flip-left" class="boton__contacto">
                 <a class="contacto" href="pages/contacto.html"> Contactanos </a> 
                 </button>
             </div>
-            <div class="col-md-7 order-1">
+            <div class="col-md-7 ">
                 <p data-aos="fade-left" class="letraColorBlanco titulo__vendemos" >Vendemos <span class="letraNaranja"> ideas </span> y materializamos <span class="letraNaranja">identidades. </span></p>
             </div>
         </div>
@@ -141,7 +141,7 @@
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -165,7 +165,6 @@
           <p>Some representative placeholder content for the third slide.</p>
         </div>
       </div>
-      <div class="container-fluid">
       <div class="carousel-item">
         <iframe class="video" width="70%" height="520" src="https://www.youtube.com/embed/mSyv5FkfiWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="carousel-caption d-none d-md-block">
@@ -173,7 +172,6 @@
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
-    </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -227,13 +225,13 @@
 
 <!-- Equipo  -->
 
-<section id="quienes">
+<div id="quienes" data-aos="flip-right" class="containter-fluid">
     <h2 data-aos="flip-left" class="titulosGrandes letraColorBlanco" >Conocenos</h2>
     <p data-aos="fade-up" class="textoComp letraColorBlanco">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, enim. Quia est dignissimos odit officia earum eveniet obcaecati officiis quibusdam excepturi, a perferendis sequi, vel blanditiis voluptas, voluptate deleniti tempora!
     Velit provident deserunt soluta corrupti quam ad ea sunt, aperiam earum, fugiat aspernatur? Deleniti, doloremque quos perspiciatis numquam blanditiis temporibus esse at illum, nesciunt pariatur dolor, error rerum officiis repellat!
     Dolore maiores rerum dolorum quasi nulla quibusdam saepe, iste eum eveniet veritatis optio est tempora asperiores laborum, ipsam pariatur ut, consectetur magni ipsum laudantium? Voluptatum, nesciunt modi. Deleniti, aperiam porro?</p>
     <h2 data-aos="flip-left" class="titulosGrandes letraColorBlanco">Equipo</h2>
-    <div data-aos="flip-right" class="equipo">
+    <!-- <div data-aos="flip-right" class="equipo">
         <div class="equipo__imageJc">
         <img src="images/jcrivas.jpeg" alt="Jhan Rivas" width="480" height="520">
         </div>
@@ -243,8 +241,53 @@
         <div class="equipo__textoJc">
         <p class="letraColorBlanco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nemo ratione perferendis. Incidunt distinctio molestias praesentium quos odit voluptatum, ipsum necessitatibus, eveniet nihil consequuntur nulla! Deleniti fuga aliquid natus nobis!</p>
         </div>
+    </div> -->
+    <div class="container-fluid">
+    <div class="row mb-5">
+        <div class="col-lg-2 ps-0 pe-0"></div>
+        <div class="card ps-0 pe-0 mb-5" style="width: 40rem;height:70rem">
+            <img src="images/jcrivas.jpeg" alt="Jhan Rivas" height="85%">
+            <div class="card-body">
+              <h5 class="card-title">Jhan Carlos Rivas</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Conoce un poco mas</a>
+            </div>
+          </div>
+        <div class="col-lg-1 ps-0 pe-0"></div>
+        <div class="card ps-0 pe-0" style="width: 40rem;height:70rem">
+            <img src="images/jcrivas.jpeg" alt="Jhan Rivas" height="85%">
+            <div class="card-body">
+              <h5 class="card-title">Jhan Carlos Rivas</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Conoce un poco mas</a>
+            </div>
+          </div>
+          <div class="col-lg-2 ps-0 pe-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 ps-0 pe-0"></div>
+            <div class="card ps-0 pe-0 mb-5" style="width: 40rem;height:70rem">
+                <img src="images/jcrivas.jpeg" alt="Jhan Rivas" height="85%">
+                <div class="card-body">
+                  <h5 class="card-title">Jhan Carlos Rivas</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Conoce un poco mas</a>
+                </div>
+              </div>
+            <div class="col-lg-1 ps-0 pe-0"></div>
+            <div class="card ps-0 pe-0" style="width: 40rem;height:70rem">
+                <img src="images/jcrivas.jpeg" alt="Jhan Rivas" height="85%">
+                <div class="card-body">
+                  <h5 class="card-title">Jhan Carlos Rivas</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Conoce un poco mas</a>
+                </div>
+              </div>
+              <div class="col-lg-2 ps-0 pe-0"></div>
+            </div>
     </div>
-</section>
+</div>
+
 
 <!-- Footer  -->
 
@@ -257,16 +300,16 @@
             <p class="contMov">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam libero accusamus, alias natus asperiores iusto officia nihil, repellat consequuntur sint soluta laborum odio dolorem fuga et ipsum, sit veritatis!</p>
         </div>
         <div class="contactanosD">
-            <h3 class="textoComp">Contactanos</h3>
+            <h3 class="texto">Contactanos</h3>
             <p class="contMov">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, id!</p>
         </div>
         <div class="redesS">
-            <h3 class="textoComp">Redes Sociales</h3>
-            <a class="textoComp" href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">Instagram</a>
-            <a class="textoComp" href="https://www.facebook.com/jhancarlos.rivaspinto/" target="_blank">Facebook</a>
+            <h3 class="texto">Redes Sociales</h3>
+            <a class="texto" href="https://www.instagram.com/rivaldesing/?hl=es" target="_blank">Instagram</a>
+            <a class="texto" href="https://www.facebook.com/jhancarlos.rivaspinto/" target="_blank">Facebook</a>
         </div>
         <div class="copy">
-        <h3 class="textoComp">© Rival Desing / Todos los derechos reservados.</h3>
+        <h3 class="texto">© Rival Desing / Todos los derechos reservados.</h3>
         </div>
 </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
