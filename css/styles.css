@@ -117,7 +117,6 @@ body{
     font-family: "Verdana", sans-serif;
     text-shadow: 4px 4px black;
     text-align: left;
-    margin-right: 50px;
     font-size: 6rem;
 }
 
@@ -332,21 +331,21 @@ footer{
 
 .vendemosD{
     grid-area: vendemosD;
-    font-size: 12px;
+    font-size: 1.2rem;
     justify-self: center;
     align-self: center;
 }
 
 .contactanosD{
     grid-area: contactanosD;
-    font-size: 12px;
+    font-size: 1.2rem;
     justify-self: center;
     align-self: center;
 }
 
 .redesS{
     grid-area: redesS;
-    font-size: 12px;
+    font-size: 1.2rem;
     justify-self: center;
     align-self: center;
 }

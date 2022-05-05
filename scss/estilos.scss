@@ -1,3 +1,12 @@
-.card{
-    font: size 20px;
-}
+/* Resets */
+@import "_resets.scss";
+
+/* tipografias */
+@import "_fonts.scss";
+
+/* Variables */
+@import "_variables.scss";
+
+/* Contenido */
+
+@import "_contenido.scss";
