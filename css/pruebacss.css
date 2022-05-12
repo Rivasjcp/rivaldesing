@@ -18,10 +18,11 @@
 /* Contenido */
 /* index Comienzo */
 html {
-  font-size: 62.5%;
-  height: 100%; }
+  font-size: 62.5%; }
   html body {
     background: black;
+    width: 100%;
+    overflow-x: hidden;
     /* Header Comienzo */
     /* Header Final */
     /* Presentacion Comienzo */
@@ -39,7 +40,7 @@ html {
       font-family: "Retroica", sans-serif; }
     html body p {
       font-family: "Pragmatica", sans-serif; }
-    html body .letraColorBlanco {
+    html body .letraColorBlanco, html body .contacto {
       color: white; }
     html body .header {
       background-color: white;
@@ -92,7 +93,6 @@ html {
       height: 50px;
       margin-top: 50%; }
     html body .contacto {
-      color: white;
       font: 20px "Verdana", sans-serif;
       text-decoration: none; }
     html body .video {
@@ -202,7 +202,9 @@ html {
       font-size: 1.2rem; }
     html body .distanciaBloque {
       display: block;
-      margin: 20px; }
+      margin: 20px;
+      margin-top: 0;
+      margin-top: 20px; }
     html body .distanciaOpciones {
       display: block;
       margin: 20px;
@@ -258,8 +260,8 @@ html {
     html body .uniformeG {
       grid-area: uniformeG; }
     html body .galeria {
-      margin-left: 20px;
-      margin-right: 20px; }
+      padding-left: 20px;
+      padding-right: 20px; }
     html body .border {
       border: 3px solid #e93b00; }
     html body .titulosMedianos {

@@ -4,10 +4,11 @@
 
 html{
     font-size: $text__reset;
-    height:$todoAncho;
 
     body{
         background: $colorNegro;
+        width: $todoAncho;
+        overflow-x: hidden;
 
         /* Header Comienzo */
     
@@ -104,7 +105,7 @@ html{
                     }
 
                 .contacto{
-                    color:$colorBlanco;
+                    @extend .letraColorBlanco;
                     font:$textoBoton;
                     text-decoration:$nada
                     }
@@ -274,18 +275,28 @@ html{
 
 /* contacto */
 
-.distanciaBloque{
-    display: block;
-    margin:20px
+@mixin margin($total,$alto){
+    margin: $total;
+    margin-top: $alto;
 }
 
-.distanciaOpciones{
-    display: block;
-    margin:20px;
-    margin-top: 0;
+$display:(
+    Bloque:block,
+    Opciones:block,
+);
+
+@each $nombre, $accion in $display {
+    .distancia#{$nombre} {
+    display:$accion;
+    @include margin(20px,0);
+    @if $nombre==Bloque{
+        margin-top: 20px
+    }
+}
 }
 
 /* Proyectos */
+
 
 .clientes{
     background-color: $colorNaranja;
@@ -381,8 +392,8 @@ html{
 }
 
 .galeria{
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .border{
