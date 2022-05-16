@@ -122,6 +122,9 @@ html{
                     }
 
                 .textoVideo{
+                    font:$textParrafo;
+                    text-align: justify;
+                    line-height:1.5;
                     margin:$marginTextVideo;
                     padding:$paddingTextVideo;
                     }
@@ -161,6 +164,7 @@ html{
                     font:$textComp;
                     text-align: justify;
                     line-height:1.3; 
+                    text-decoration:$nada;
                     }
 
                 .tituloPequeño{
@@ -214,12 +218,27 @@ html{
                     
                     }
 
+                    .textoConocenos{
+                    font:$textParrafo;
+                    text-align: justify;
+                    line-height:1.5;
+                    margin: 20px 40px 0 40px
+                }
+
+                .botonEquipo{
+                    border: $borderContacto;
+                    background:$colorNaranja;
+                    border-radius: 10px;
+                    width: 180px;
+                    height: 30px;
+                }
+
                 /* Servicios final */
 
                 /* footer comienzo */
 
                 footer{
-                    height:175px;
+                    height:250px;
                     background:$colorBlanco;
                     color:$colorNegro;
                     width:$todoAncho;
@@ -240,14 +259,14 @@ html{
                 .logoR{
                     grid-area: logoR;
                     justify-self: $centrar;
-                    align-self: start;
+                    align-self: $centrar;
                 }
                 
                 .vendemosD{
                     grid-area: vendemosD;
                     font-size: 1.2rem;
                     justify-self: $centrar;
-                    align-self: $centrar;
+                    align-self: end;
                 }
                 
                 .contactanosD{
@@ -261,13 +280,13 @@ html{
                     grid-area: redesS;
                     font-size: 1.2rem;
                     justify-self: $centrar;
-                    align-self: $centrar;
+                    align-self: end;
                 }
                 
                 .copy{
                     grid-area: copyright;
                     justify-self: $centrar;
-                    align-self: start;
+                    align-self: end;
                     font-size: 1.2rem;
                 }
 
@@ -415,7 +434,7 @@ $display:(
 }
 
 @media only screen and (max-width:400px) {
-    
+
     .logoNav{
         width: 140px;
         height: 50px;
@@ -478,7 +497,7 @@ $display:(
     }
 
     .servicios{
-        height:1300px ;
+        height:1800px ;
         display: grid;
         grid-template-areas: "tServicios tServicios tServicios"
         "imagenDis imagenDis imagenDis"
@@ -502,6 +521,13 @@ $display:(
          height:150px
     }
 
+    .imgConocenos{
+       width: 350px;
+       height: 350px; 
+       margin-left: 5px;
+       margin-top: 20px;
+    }
+
     .footer__grid{
         height:480px;
         display: grid;
@@ -513,6 +539,9 @@ $display:(
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 150px repeat(5,1fr);
         align-content: start;
+    }
+    .copy{
+        margin-top:20px
     }
 
     .trabajos{
