@@ -192,7 +192,7 @@ html {
       display: grid;
       grid-template-areas: "logoR vendemosD contactanosD" "logoR redesS redesS" "copyright copyright copyright";
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 100px 1fr 1fr; }
+      grid-template-rows: 160px 1fr 1fr; }
     html body .logoR {
       grid-area: logoR;
       justify-self: center;
@@ -201,7 +201,7 @@ html {
       grid-area: vendemosD;
       font-size: 1.2rem;
       justify-self: center;
-      align-self: end; }
+      align-self: center; }
     html body .contactanosD {
       grid-area: contactanosD;
       font-size: 1.2rem;
@@ -250,8 +250,8 @@ html {
       display: grid;
       grid-template-areas: "tips vBrela gBrela" "herbaplant herbaplant herbaplant" "certificado certificado certificado" "cGiltyle lBrela lShaw" "gTriptico gRevista gRevista" "uniformeG uniformeG uniformeG";
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: repeat(6, 550px);
-      grid-gap: 1px; }
+      grid-template-rows: repeat(6, 600px);
+      gap: 20px; }
     html body .aTrabajos {
       grid-area: aTrabajos; }
     html body .tips {
@@ -325,12 +325,14 @@ html {
         width: 90%;
         height: 720; }
       html body .textoComp {
-        font-size: 2rem; }
+        font-size: 2rem;
+        text-align: start; }
       html body .textoVideo {
         margin-left: 10px;
-        margin-right: 10px; }
+        margin-right: 10px;
+        text-align: start; }
       html body .servicios {
-        height: 1800px;
+        height: 1700px;
         display: grid;
         grid-template-areas: "tServicios tServicios tServicios" "imagenDis imagenDis imagenDis" "tituloDis tituloDis tituloDis" "imagenVideo imagenVideo imagenVideo" "tituloVideo tituloVideo tituloVideo" "imagenWeb imagenWeb imagenWeb" "tituloWeb tituloWeb tituloWeb";
         grid-template-columns: 1fr 1fr 1fr;
@@ -366,4 +368,7 @@ html {
         margin-left: 10px;
         margin-right: 10px; }
       html body .texto {
-        font-size: 1.5rem; } }
+        font-size: 1.5rem;
+        text-align: start; }
+      html body .textoConocenos {
+        text-align: start; } }

@@ -266,7 +266,7 @@ html{
                     grid-area: vendemosD;
                     font-size: 1.2rem;
                     justify-self: $centrar;
-                    align-self: end;
+                    align-self: $centrar;
                 }
                 
                 .contactanosD{
@@ -358,8 +358,8 @@ $display:(
     "gTriptico gRevista gRevista"
     "uniformeG uniformeG uniformeG";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6,550px);
-    grid-gap: 1px;
+    grid-template-rows: repeat(6,600px);
+    gap: 20px
 }
 
 .aTrabajos{
@@ -368,10 +368,11 @@ $display:(
 
 .tips{
     grid-area: tips;
+    
 }
 
 .vBrela{
-    grid-area: vBrela;
+    grid-area: vBrela; 
 }
 
 .gBrela{
@@ -416,7 +417,7 @@ $display:(
 }
 
 .border{
-    border: 3px solid $colorNaranja ;
+    border: 3px solid $colorNaranja  ;
 }
 
 /* Rivalidad y Diseño */
@@ -488,16 +489,19 @@ $display:(
     }
 
     .textoComp{
-      font-size: 2rem;  
+      font-size: 2rem;
+      text-align: start
+      
     }
 
     .textoVideo{
         margin-left: 10px;
         margin-right: 10px;
+        text-align: start
     }
 
     .servicios{
-        height:1800px ;
+        height:1700px ;
         display: grid;
         grid-template-areas: "tServicios tServicios tServicios"
         "imagenDis imagenDis imagenDis"
@@ -569,6 +573,10 @@ $display:(
 
     .texto{
         font-size: 1.5rem;
+        text-align: start
+    }
+    .textoConocenos{
+        text-align: start  
     }
 }
 
