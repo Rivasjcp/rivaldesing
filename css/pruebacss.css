@@ -117,6 +117,12 @@ html {
       grid-template-areas: "tServicios tServicios tServicios" "imagenDis imagenVideo imagenWeb" "tituloDis tituloVideo tituloWeb";
       grid-template-columns: 1fr 1fr 1f;
       grid-template-rows: 120px 1fr 1fr; }
+    html body .Servi {
+      width: 50px;
+      height: 50px; }
+    html body .quien {
+      width: 50px;
+      height: 50px; }
 
 @keyframes efecto__servicios {
   0% {
@@ -289,6 +295,11 @@ html {
       font-style: italic;
       text-decoration: solid;
       font-weight: bold; }
+    html body .naranja {
+      background-color: #e93b00; }
+    html body .seccion {
+      text-align: end;
+      margin-top: 60px; }
     @media only screen and (max-width: 400px) {
       html body .logoNav {
         width: 140px;
@@ -338,7 +349,7 @@ html {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 120px repeat(7, 1fr); }
       html body .titulosGrandes {
-        font-size: 4rem; }
+        font-size: 3rem; }
       html body .tituloPequeño {
         font-size: 3rem; }
       html body .logoR .logoFooter {
@@ -354,7 +365,7 @@ html {
         display: grid;
         grid-template-areas: "logoR logoR" "vendemosD vendemosD" "contactanosD contactanosD" "redesS redesS" "copyright copyright";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px repeat(5, 1fr);
+        grid-template-rows: 150px 120px 90px 60px 1fr;
         align-content: start; }
       html body .copy {
         margin-top: 20px; }
@@ -362,8 +373,8 @@ html {
         display: grid;
         grid-template-areas: "tips tips" "vBrela vBrela" "gBrela gBrela" "herbaplant herbaplant" "certificado certificado" "cGiltyle cGiltyle" "lBrela lBrela" "lShaw lShaw" "gTriptico gTriptico" "gRevista gRevista" "uniformeG uniformeG";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 300px) 100px 200px repeat(6, 300px);
-        grid-gap: 1px; }
+        grid-template-rows: repeat(3, 300px) 100px 200px repeat(3, 300px) 500px repeat(2, 300px);
+        gap: 20px; }
       html body .margen__cards {
         margin-left: 10px;
         margin-right: 10px; }

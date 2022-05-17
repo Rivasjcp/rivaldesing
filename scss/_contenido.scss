@@ -145,6 +145,15 @@ html{
                     grid-template-columns: $gridColServicios;
                     grid-template-rows: $gridRowServicios;
                 }
+                .Servi{
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .quien{
+                    width: 50px;
+                    height: 50px;
+                }
 
                 @keyframes efecto__servicios{
                     0% {width: 450px; height: 450px;}
@@ -434,6 +443,15 @@ $display:(
     font-weight: bold;
 }
 
+.naranja{
+    background-color: $colorNaranja
+}
+
+.seccion{
+    text-align: end;
+    margin-top:60px
+}
+
 @media only screen and (max-width:400px) {
 
     .logoNav{
@@ -514,7 +532,7 @@ $display:(
         grid-template-rows: 120px repeat(7,1fr) ;
     }
     .titulosGrandes{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .tituloPequeño{
         font-size: 3rem;
@@ -541,7 +559,7 @@ $display:(
         "redesS redesS"
         "copyright copyright";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px repeat(5,1fr);
+        grid-template-rows: 150px 120px 90px 60px 1fr;
         align-content: start;
     }
     .copy{
@@ -563,8 +581,8 @@ $display:(
         "gRevista gRevista"
         "uniformeG uniformeG";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3,300px) 100px 200px repeat(6,300px);
-        grid-gap: 1px;
+        grid-template-rows: repeat(3,300px) 100px 200px repeat(3,300px) 500px repeat(2,300px);
+        gap: 20px;
     }
     .margen__cards{
         margin-left: 10px;
