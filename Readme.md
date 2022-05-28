@@ -1,4 +1,4 @@
-<img src="images/Logo-Rival-Desing-web1.png">
+<img src="images/Logo Rival Desing1.png">
 
 # Rival Desing
 
@@ -8,5 +8,10 @@ Puedes visitar el sitio y echarle una ojeada por medio del siguiente [link](http
 
 ## Este proyecto fue creado con:
 
-<img src="images/html5-brands.svg"> <img src="images/html5-brands.svg">
+* HTML
+* CSS
+* SASS
+* GIT & GITHUB
+* JavaScript
+* Librerías de Animaciones y funcionalidades
 
