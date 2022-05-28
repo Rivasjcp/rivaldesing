@@ -1,7 +1,5 @@
 /* index Comienzo */
 
-
-
 html{
     font-size: $text__reset;
 
@@ -10,7 +8,7 @@ html{
         width: $todoAncho;
         overflow-x: hidden;
 
-        /* Header Comienzo */
+        /* Header */
     
         h2,h3{
             font-family: $textRetroica
@@ -24,579 +22,841 @@ html{
             color: $colorBlanco;
             }
 
-            .header{
-                background-color: $colorBlanco;
-                font-family: $textRoboto;
-                position:sticky;
-                top:0px;
-                z-index: 1;
+        .header{
+            background-color: $colorBlanco;
+            font-family: $textRoboto;
+            position:sticky;
+            top:0px;
+            z-index: 1;
 
-                li{
-                    font-size: 1.6rem;
-                }
+            li{
+                font-size: 1.6rem;
+            }
         
-                a {
-                    text-decoration:$nada;
-                }
+            a {
+                text-decoration:$nada;
+            }
 
-                .colorNaranja{
-                    color:$colorNegro;
-                    transition: $transicionColor;
-                }
+            .colorNaranja{
+                color:$colorNegro;
+                transition: $transicionColor;
+            }
     
-                .colorNaranja:hover{
-                    color:$colorNaranja
-                }
-
-                .nav__redesInsta{
-                    margin:10px;
-                }
+            .colorNaranja:hover{
+                color:$colorNaranja
             }
 
-            /* Header Final */
-
-            /* Presentacion Comienzo */
-
-            .titulo__vendemos{
-                font: $tituloGrandes;
-                text-shadow: $shadowText;
-                text-align: left;
+            .nav__redesInsta{
+                margin:10px;
             }
+        }
 
-            .letraNaranja{
-                color:$colorNaranja;
+        /* Header Final */
+
+        /* Presentacion */
+
+        .titulo__vendemos{
+            font: $tituloGrandes;
+            text-shadow: $shadowText;
+            text-align: left;
+        }
+
+        .letraNaranja{
+            color:$colorNaranja;
+        }
+
+        .presentacion__grid{
+            display:grid;
+            grid-template-rows: $gridRowPresentacion;
+            grid-template-columns: $gridColPresentacion;
+            background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/portada.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 800px;
+        }
+
+        .logo{
+            align-self: $centrar;
+            margin:$marginLogo;
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        .boton__contactoGrid{
+            align-self: $centrar;
+            justify-self: $centrar;
+            grid-row:2/3;
+            grid-column:1/2;
+        }
+
+        .titulo__vendemosGrid{
+            grid-row:2/3;
+            grid-column:2/3;
+        }
+
+        .boton__contacto{
+            border: $borderContacto;
+            background:$colorNaranja;
+            border-radius: 10px;
+            width: 200px;
+            height: 50px;
+            margin-top:50%;
+        }
+
+        .contacto{
+            @extend .letraColorBlanco;
+            font:$textoBoton;
+            text-decoration:$nada
+        }
+
+        /* Presentacion Final */
+
+        /* Video */
+                
+        .video{
+            display:block;
+            margin:auto;
+            margin-top:60px;
+            margin-bottom:30px;
+        }
+
+        .textoVideo{
+            font:$textParrafo;
+            text-align: justify;
+            line-height:1.5;
+            margin:$marginTextVideo;
+            padding:$paddingTextVideo;
+        }
+
+        /* Video final */
+
+        /* Servicios */
+                
+        .servicios{
+            width: 100%;
+            height:450px ;
+            background:$backServicios;
+            padding:20px;
+            display:grid;
+            grid-template-areas:"tServicios tServicios tServicios"
+                                "imagenDis imagenVideo imagenWeb"
+                                "tituloDis tituloVideo tituloWeb";
+            grid-template-columns: $gridColServicios;
+            grid-template-rows: $gridRowServicios;
+        }
+                
+        .Servi{
+            width: 50px;
+            height: 50px;
+        }
+
+        .quien{
+            width: 50px;
+            height: 50px;
+        }
+
+        .textoComp{
+            font:$textComp;
+            text-align: justify;
+            line-height:1.3;
+            padding:30px;
+            padding-top:5px;
+        }
+
+        .texto{
+            font:$textComp;
+            text-align: justify;
+            line-height:1.3; 
+            text-decoration:$nada;
+        }
+
+        .tituloPequeño{
+            text-align: $centrar;
+            font-size: 30px;
+            margin:8px
+        }
+
+        .titulosGrandes{
+            text-align: $centrar;
+            font:$tituloGrandes;
+            margin:20px;
+        }
+
+        .tServicios{
+            grid-area:tServicios;           
+        }
+                    
+        .imagenDis{
+            grid-area:imagenDis;
+            justify-self: $centrar;
+        }
+                    
+        .imagenVideo{
+            grid-area:imagenVideo;
+            justify-self: $centrar;
+        }
+                    
+        .imagenWeb{
+            grid-area: imagenWeb;
+            justify-self: $centrar;
+        }
+                    
+        .tituloDis{
+            grid-area:tituloDis;      
+        }
+                    
+        .tituloVideo{
+            grid-area: tituloVideo;
+        }
+                    
+        .tituloWeb{
+            grid-area: tituloWeb;
+        }
+
+        .textoConocenos{
+            font:$textParrafo;
+            text-align: justify;
+            line-height:1.5;
+            margin: 20px 40px 0 40px
+        }
+
+        .botonEquipo{
+            border: $borderContacto;
+            background:black;
+            border-radius: 10px;
+            width: 180px;
+            height: 30px;
+        }
+
+        .botonEquipo:hover{
+            background:$colorNaranja;
+        }
+
+        /* Servicios final */
+
+        .personalizarCard{
+            background: linear-gradient(225deg, rgb(61, 59, 59),#e93b00); 
+            border-radius: 10px;
+            box-shadow: 1px 5px 15px black;
+        }
+
+        .personalizarCard:hover{
+            transform: scale(1.05);
+            transition: all 300ms ease;
+        }
+
+        .boton__contacto:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease;
+        }
+
+        .imgConocenos{
+            animation-name:efecto__servicios;
+        }
+
+        /* Boton de ir hacia arriba */
+
+        #button-up{
+            width: 55px;
+            height: 55px;
+            background: $colorNaranja;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 50%;
+            font-size: 20px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            border:4px solid transparent;
+            transition: all 300ms ease; 
+            text-decoration: none;
+            transform: scale(0);
+        }
+
+        #button-up:hover{
+            transform: scale(1.1);
+        }
+
+        /* footer comienzo */
+
+        footer{
+            height:250px;
+            background:$colorBlanco;
+            color:$colorNegro;
+            width:$todoAncho;
+            margin-top: 50px;
+            display: sticky;
+            bottom: 0;
+        }
+
+        .footer__grid{
+            display: grid;
+            grid-template-areas:"logoR vendemosD contactanosD"
+                                "logoR redesS redesS"
+                                "copyright copyright copyright";
+            grid-template-columns: $gridColFooter;
+            grid-template-rows:$gridRowFooter;
+        }
+
+        .logoR{
+            grid-area: logoR;
+            justify-self: $centrar;
+            align-self: $centrar;
+        }
+                
+        .vendemosD{
+            grid-area: vendemosD;
+            font-size: 1.2rem;
+            justify-self: $centrar;
+            align-self: $centrar;
+        }
+                
+        .contactanosD{
+            grid-area: contactanosD;
+            font-size: 1.2rem;
+            justify-self: $centrar;
+            align-self: $centrar;
+        }
+                
+        .redesS{
+            grid-area: redesS;
+            font-size: 1.2rem;
+            justify-self: $centrar;
+            align-self: end;
+        }
+                
+        .copy{
+            grid-area: copyright;
+            justify-self: $centrar;
+            align-self: end;
+            font-size: 1.2rem;
+        }
+
+        /* footer final */
+
+        /* contacto */
+
+        .contactoImg{
+            background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/marketing.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .contactoContenido{
+            background: rgba(16, 16, 16, 0.65);
+            border-radius: 15px;
+        }
+
+        /* Proyectos */
+
+
+        .clientes{
+            background-color: $colorNaranja;
+            padding: 5px;
+            display:grid;
+            grid-template-areas: "clientes clientes clientes"
+                                 "lGiltyle lCesar lRussian";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 130px 1fr;
+            grid-gap: 10px;
+        }
+
+        .clientes__titulo{
+            grid-area:clientes;
+        }
+
+        .lGiltyle{
+            grid-area:lGiltyle;
+            justify-self: $centrar;
+        }
+
+        .lGiltyle:hover{
+            background: linear-gradient(rgba(5,5,5,0.75),rgba(5,5,5,0.75));
+            transform: scale(1.05);
+            transition: all 300ms ease;
+        }
+
+        .lCesar{
+            grid-area:lCesar;
+            justify-self: $centrar;
+        }
+
+        .lCesar:hover{
+            background: linear-gradient(rgba(5,5,5,0.75),rgba(5,5,5,0.75));
+            transform: scale(1.05);
+            transition: all 300ms ease;
+        }
+
+        .lRussian{
+            grid-area:lRussian;
+            justify-self: $centrar;
+            border: 5px black;
+        }
+
+        .lRussian:hover{
+            background: linear-gradient(rgba(5,5,5,0.75),rgba(5,5,5,0.75));
+            transform: scale(1.05);
+            transition: all 300ms ease;
+        }
+
+        .trabajos{
+            display:grid;
+            grid-template-areas:
+            "tips vBrela gBrela"
+            "herbaplant herbaplant herbaplant"
+            "certificado certificado certificado"
+            "cGiltyle lBrela lShaw"
+            "gTriptico gRevista gRevista"
+            "uniformeG uniformeG uniformeG";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(6,600px);
+            gap: 20px
+        }                   
+
+        .aTrabajos{
+            grid-area: aTrabajos;
+        }
+
+
+        .tips{
+            grid-area: tips;
+    
+        }
+
+        .tips:hover{
+            background: linear-gradient(rgba(233,58,0,0.75),rgba(233,58,0,0.75));
+            transform: scale(1.05);
+            transition: all 300ms ease;
+        }       
+
+        .vBrela{
+            grid-area: vBrela; 
+        }
+
+        .gBrela{
+            grid-area: gBrela;
+        }
+
+        .herbaplant{
+        grid-area: herbaplant;
+        }
+        .certificado{
+            grid-area: certificado;
+        }
+        
+        .cGiltyle{
+            grid-area: cGiltyle;
+        }
+        
+        .lBrela{
+            grid-area: lBrela;
+        }
+        
+        .lShaw{
+            grid-area: lShaw;
+        }
+        
+        .gTriptico{
+            grid-area: gTriptico;
+        }
+        
+        .gRevista{
+            grid-area: gRevista;
+        }
+        
+        .uniformeG{
+            grid-area: uniformeG;
+        }
+        
+        .galeria{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .border{
+            border: 3px solid $colorNaranja  ;
+        }
+        
+        /* Rivalidad y Diseño */
+        
+        .titulosMedianos{
+            text-align: $centrar;
+            margin-top:50px;
+            font-size: 35px;
+        }
+        
+        .estiloLetra{
+            font-style: italic;
+            text-decoration: solid;
+            font-weight: bold;
+        }
+        
+        .naranja{
+            background-color: $colorNaranja
+        }
+        
+        .seccion{
+            text-align: end;
+            margin-top:60px
+        }
+
+        /* Media querys */
+        
+        @media only screen and (max-width:750px) {
+        
+            .logoNav{
+                width: 140px;
+                height: 50px;
             }
-
+        
+            .titulosNav{
+                margin-top:50px;
+                font-size: 2rem;
+            }
+        
+            .titulosServ{
+                font-size: 4rem;
+            }
+        
+            .logo{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                margin: auto;
+                width:200px;
+                height: 200px;
+            }
+        
             .presentacion__grid{
                 display:grid;
-                grid-template-rows: $gridRowPresentacion;
-                grid-template-columns: $gridColPresentacion;
-                background-image: url("../images/portada.jpg");
-                width: 100%;
-                height: 800px;
-                }
-
-                .logo{
-                    align-self: $centrar;
-                    margin:$marginLogo;
-                    grid-column: 1/3;
-                    grid-row: 1/2;
-                }
-
-                .boton__contactoGrid{
-                    align-self: $centrar;
-                    justify-self: $centrar;
-                    grid-row:2/3;
-                    grid-column:1/2;
-                }
-
-                .titulo__vendemosGrid{
-                    grid-row:2/3;
-                    grid-column:2/3;
-                }
-
-                .boton__contacto{
-                    border: $borderContacto;
-                    background:$colorNaranja;
-                    border-radius: 10px;
-                    width: 200px;
-                    height: 50px;
-                    margin-top:50%;
-                    }
-
-                .contacto{
-                    @extend .letraColorBlanco;
-                    font:$textoBoton;
-                    text-decoration:$nada
-                    }
-
-            /* Presentacion Final */
-
-            /* Video Comienzo */
-                
-                .video{
-                    display:block;
-                    margin:auto;
-                    margin-top:60px;
-                    margin-bottom:30px;
-                    }
-
-                .textoVideo{
-                    font:$textParrafo;
-                    text-align: justify;
-                    line-height:1.5;
-                    margin:$marginTextVideo;
-                    padding:$paddingTextVideo;
-                    }
-
-            /* Video final */
-
-            /* Servicios Comienzo */
-                
-                .servicios{
-                    width: 100%;
-                    height:450px ;
-                    background:$backServicios;
-                    padding:20px;
-                    display:grid;
-                    grid-template-areas:"tServicios tServicios tServicios"
-                                            "imagenDis imagenVideo imagenWeb"
-                                            "tituloDis tituloVideo tituloWeb";
-                    grid-template-columns: $gridColServicios;
-                    grid-template-rows: $gridRowServicios;
-                }
-                .Servi{
-                    width: 50px;
-                    height: 50px;
-                }
-
-                .quien{
-                    width: 50px;
-                    height: 50px;
-                }
-
-                @keyframes efecto__servicios{
-                    0% {width: 450px; height: 450px;}
-                    50% {width: 300px; height: 300px;}
-                    100% {width: 150px; height: 150px;}
-                    }
-
-                .textoComp{
-                    font:$textComp;
-                    text-align: justify;
-                    line-height:1.3;
-                    padding:30px;
-                    padding-top:5px;
-                    }
-
-                .texto{
-                    font:$textComp;
-                    text-align: justify;
-                    line-height:1.3; 
-                    text-decoration:$nada;
-                    }
-
-                .tituloPequeño{
-                    text-align: $centrar;
-                    font-size: 30px;
-                    margin:8px
-                    }
-
-                .titulosGrandes{
-                    text-align: $centrar;
-                    font:$tituloGrandes;
-                    margin:20px;
-                    }
-                    .tServicios{
-                        grid-area:tServicios;
-                    
-                    }
-                    
-                .imagenDis{
-                    grid-area:imagenDis;
-                    justify-self: $centrar;
-                    animation-name:efecto__servicios;
-                    animation-iteration-count: initial;
-                    animation-timing-function: ease-in;
-                    animation-duration: 1s;
-                    animation-delay: 5s;
-                    }
-                    
-                .imagenVideo{
-                    grid-area:imagenVideo;
-                    justify-self: $centrar;
-                    }
-                    
-                .imagenWeb{
-                    grid-area: imagenWeb;
-                    justify-self: $centrar;
-                    }
-                    
-                    .tituloDis{
-                        grid-area:tituloDis;
-                    
-                    }
-                    
-                    .tituloVideo{
-                        grid-area: tituloVideo;
-                    
-                    }
-                    
-                    .tituloWeb{
-                        grid-area: tituloWeb;
-                    
-                    }
-
-                    .textoConocenos{
-                    font:$textParrafo;
-                    text-align: justify;
-                    line-height:1.5;
-                    margin: 20px 40px 0 40px
-                }
-
-                .botonEquipo{
-                    border: $borderContacto;
-                    background:$colorNaranja;
-                    border-radius: 10px;
-                    width: 180px;
-                    height: 30px;
-                }
-
-                /* Servicios final */
-
-                /* footer comienzo */
-
-                footer{
-                    height:250px;
-                    background:$colorBlanco;
-                    color:$colorNegro;
-                    width:$todoAncho;
-                    margin-top: 50px;
-                    display: sticky;
-                    bottom: 0;
-                }
-
-                .footer__grid{
-                    display: grid;
-                    grid-template-areas:"logoR vendemosD contactanosD"
-                                        "logoR redesS redesS"
-                                        "copyright copyright copyright";
-                    grid-template-columns: $gridColFooter;
-                    grid-template-rows:$gridRowFooter;
-                }
-
-                .logoR{
-                    grid-area: logoR;
-                    justify-self: $centrar;
-                    align-self: $centrar;
-                }
-                
-                .vendemosD{
-                    grid-area: vendemosD;
-                    font-size: 1.2rem;
-                    justify-self: $centrar;
-                    align-self: $centrar;
-                }
-                
-                .contactanosD{
-                    grid-area: contactanosD;
-                    font-size: 1.2rem;
-                    justify-self: $centrar;
-                    align-self: $centrar;
-                }
-                
-                .redesS{
-                    grid-area: redesS;
-                    font-size: 1.2rem;
-                    justify-self: $centrar;
-                    align-self: end;
-                }
-                
-                .copy{
-                    grid-area: copyright;
-                    justify-self: $centrar;
-                    align-self: end;
-                    font-size: 1.2rem;
-                }
-
-                /* footer final */
-
-/* contacto */
-
-@mixin margin($total,$alto){
-    margin: $total;
-    margin-top: $alto;
-}
-
-$display:(
-    Bloque:block,
-    Opciones:block,
-);
-
-@each $nombre, $accion in $display {
-    .distancia#{$nombre} {
-    display:$accion;
-    @include margin(20px,0);
-    @if $nombre==Bloque{
-        margin-top: 20px
-    }
-}
-}
-
-/* Proyectos */
-
-
-.clientes{
-    background-color: $colorNaranja;
-    padding: 5px;
-    display:grid;
-    grid-template-areas: "clientes clientes clientes"
-                         "lGiltyle lCesar lRussian";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 130px 1fr;
-    grid-gap: 10px;
-}
-
-.clientes__titulo{
-    grid-area:clientes;
-}
-
-.lGiltyle{
-    grid-area:lGiltyle;
-    justify-self: $centrar;
-}
-
-.lCesar{
-    grid-area:lCesar;
-    justify-self: $centrar;
-}
-
-.lRussian{
-    grid-area:lRussian;
-    justify-self: $centrar;
-    border: 5px black;
-}
-
-.trabajos{
-    display:grid;
-    grid-template-areas:
-    "tips vBrela gBrela"
-    "herbaplant herbaplant herbaplant"
-    "certificado certificado certificado"
-    "cGiltyle lBrela lShaw"
-    "gTriptico gRevista gRevista"
-    "uniformeG uniformeG uniformeG";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6,600px);
-    gap: 20px
-}
-
-.aTrabajos{
-    grid-area: aTrabajos;
-}
-
-.tips{
-    grid-area: tips;
-    
-}
-
-.vBrela{
-    grid-area: vBrela; 
-}
-
-.gBrela{
-    grid-area: gBrela;
-}
-
-.herbaplant{
-    grid-area: herbaplant;
-}
-
-.certificado{
-    grid-area: certificado;
-}
-
-.cGiltyle{
-    grid-area: cGiltyle;
-}
-
-.lBrela{
-    grid-area: lBrela;
-}
-
-.lShaw{
-    grid-area: lShaw;
-}
-
-.gTriptico{
-    grid-area: gTriptico;
-}
-
-.gRevista{
-    grid-area: gRevista;
-}
-
-.uniformeG{
-    grid-area: uniformeG;
-}
-
-.galeria{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.border{
-    border: 3px solid $colorNaranja  ;
-}
-
-/* Rivalidad y Diseño */
-
-.titulosMedianos{
-    text-align: $centrar;
-    margin-top:50px;
-    font-size: 35px;
-}
-
-.estiloLetra{
-    font-style: italic;
-    text-decoration: solid;
-    font-weight: bold;
-}
-
-.naranja{
-    background-color: $colorNaranja
-}
-
-.seccion{
-    text-align: end;
-    margin-top:60px
-}
-
-@media only screen and (max-width:400px) {
-
-    .logoNav{
-        width: 140px;
-        height: 50px;
-    }
-
-    .titulosNav{
-        margin-top:50px;
-        font-size: 2rem;
-    }
-
-    .titulosServ{
-        font-size: 4rem;
-    }
-
-    .logo{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin: auto;
-        width:200px;
-        height: 200px;
-    }
-
-    .presentacion__grid{
-        display:grid;
-        grid-template-rows:230px 30% 3%;
-        grid-template-columns: 1fr ;    
-        height:700px;
-    }
-
-    .boton__contactoGrid{
-        grid-row:3/4;
-        grid-column:1/2;
-    }
-
-    .titulo__vendemosGrid{
-        grid-row:2/3;
-        grid-column:1/2;
-        align-self: center;
-        justify-self: center;
-    }
-
-    .titulo__vendemos{
-        font-size:2.8rem;
-        text-align: start;
-        margin:auto;
-    }
-
-    .video{
-        width:90%;
-         height:720
-    }
-
-    .textoComp{
-      font-size: 2rem;
-      text-align: start
-      
-    }
-
-    .textoVideo{
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: start
-    }
-
-    .servicios{
-        height:1700px ;
-        display: grid;
-        grid-template-areas: "tServicios tServicios tServicios"
-        "imagenDis imagenDis imagenDis"
-        "tituloDis tituloDis tituloDis"
-        "imagenVideo imagenVideo imagenVideo"
-        "tituloVideo tituloVideo tituloVideo"
-        "imagenWeb imagenWeb imagenWeb"
-        "tituloWeb tituloWeb tituloWeb";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 120px repeat(7,1fr) ;
-    }
-    .titulosGrandes{
-        font-size: 3rem;
-    }
-    .tituloPequeño{
-        font-size: 3rem;
-    }
-
-    .logoR .logoFooter{
-        width:150px;
-         height:150px
-    }
-
-    .imgConocenos{
-       width: 350px;
-       height: 350px; 
-       margin-left: 5px;
-       margin-top: 20px;
-    }
-
-    .footer__grid{
-        height:480px;
-        display: grid;
-        grid-template-areas: "logoR logoR"
-        "vendemosD vendemosD"
-        "contactanosD contactanosD"
-        "redesS redesS"
-        "copyright copyright";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px 120px 90px 60px 1fr;
-        align-content: start;
-    }
-    .copy{
-        margin-top:20px
-    }
-
-    .trabajos{
-        display:grid;
-        grid-template-areas:
-        "tips tips"
-        "vBrela vBrela"
-        "gBrela gBrela"
-        "herbaplant herbaplant"
-        "certificado certificado"
-        "cGiltyle cGiltyle"
-        "lBrela lBrela"
-        "lShaw lShaw"
-        "gTriptico gTriptico"
-        "gRevista gRevista"
-        "uniformeG uniformeG";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3,300px) 100px 200px repeat(3,300px) 500px repeat(2,300px);
-        gap: 20px;
-    }
-    .margen__cards{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .texto{
-        font-size: 1.5rem;
-        text-align: start
-    }
-    .textoConocenos{
-        text-align: start  
-    }
-}
+                grid-template-rows:230px 30% 3%;
+                grid-template-columns: 1fr ;    
+                height:700px;
+            }
+        
+            .boton__contactoGrid{
+                grid-row:3/4;
+                grid-column:1/2;
+            }
+        
+            .titulo__vendemosGrid{
+                grid-row:2/3;
+                grid-column:1/2;
+                align-self: center;
+                justify-self: center;
+            }
+        
+            .titulo__vendemos{
+                font-size:2.8rem;
+                text-align: start;
+                margin:auto;
+            }
+        
+            .video{
+                width:90%;
+                 height:720
+            }
+        
+            .textoComp{
+              font-size: 2rem;
+              text-align: start
+              
+            }
+        
+            .textoVideo{
+                margin-left: 10px;
+                margin-right: 10px;
+                text-align: start
+            }
+        
+            .servicios{
+                height:1600px;
+                display: grid;
+                grid-template-areas: "tServicios tServicios tServicios"
+                "imagenDis imagenDis imagenDis"
+                "tituloDis tituloDis tituloDis"
+                "imagenVideo imagenVideo imagenVideo"
+                "tituloVideo tituloVideo tituloVideo"
+                "imagenWeb imagenWeb imagenWeb"
+                "tituloWeb tituloWeb tituloWeb";
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 120px repeat(7,1fr) ;
+            }
+            .titulosGrandes{
+                font-size: 3rem;
+            }
+            .tituloPequeño{
+                font-size: 3rem;
+            }
+        
+            .logoR .logoFooter{
+                width:150px;
+                 height:150px
+            }
+        
+            .imgConocenos{
+               width: 100%;
+               height: 300px; 
+               margin-top: 20px; 
+            }
+        
+            #button-up{
+                width: 35px;
+                height: 35px;
+                font-size: 15px;
+            }
+        
+            .footer__grid{
+                height:480px;
+                display: grid;
+                grid-template-areas: "logoR logoR"
+                "vendemosD vendemosD"
+                "contactanosD contactanosD"
+                "redesS redesS"
+                "copyright copyright";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 150px 120px 90px 60px 1fr;
+                align-content: start;
+            }
+            .copy{
+                margin-top:20px
+            }
+        
+            .clientes{
+                grid-template-areas:"clientes"
+                                    "lGiltyle"
+                                    "lCesar"
+                                    "lRussian" ;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px repeat(3,1fr);
+            }
+        
+            .lGiltyle{
+                width: 90%;
+                height: 90%;
+            }
+        
+            .lCesar{
+                width: 90%;
+                height: 90%;
+            }
+        
+            .lRussian{
+                width: 90%;
+                height: 90%;
+            }
+        
+            .trabajos{
+                display:grid;
+                grid-template-areas:
+                "tips tips"
+                "vBrela vBrela"
+                "gBrela gBrela"
+                "herbaplant herbaplant"
+                "certificado certificado"
+                "cGiltyle cGiltyle"
+                "lBrela lBrela"
+                "lShaw lShaw"
+                "gTriptico gTriptico"
+                "gRevista gRevista"
+                "uniformeG uniformeG";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(3,300px) 100px 200px repeat(3,300px) 500px repeat(2,300px);
+                gap: 20px;
+            }
+            .margen__cards{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        
+            .texto{
+                font-size: 1.5rem;
+                text-align: start
+            }
+            .textoConocenos{
+                text-align: start  
+            }
+        }
+        
+        @media only screen and (min-width:751px) and (max-width:990px) {
+        
+            .logoNav{
+                width: 140px;
+                height: 50px;
+            }
+        
+            .titulosNav{
+                margin-top:50px;
+                font-size: 2rem;
+            }
+        
+            .titulosServ{
+                font-size: 4rem;
+            }
+        
+            .logo{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                margin: auto;
+                width:300px;
+                height: 300px;
+            }
+        
+            .presentacion__grid{
+                display:grid;
+                grid-template-rows:300px 30% 3%;
+                grid-template-columns: 1fr ;    
+                height:700px;
+            }
+        
+            .boton__contactoGrid{
+                grid-row:3/4;
+                grid-column:1/2;
+            }
+        
+            .titulo__vendemosGrid{
+                grid-row:2/3;
+                grid-column:1/2;
+                align-self: center;
+                justify-self: center;
+            }
+        
+            .titulo__vendemos{
+                font-size:4rem;
+                text-align: start;
+                margin:auto;
+            }
+        
+            .video{
+                width:90%;
+                 height:720
+            }
+        
+            .textoComp{
+              font-size: 2rem;
+              text-align: start
+              
+            }
+        
+            .textoVideo{
+                margin-left: 10px;
+                margin-right: 10px;
+                text-align: start
+            }
+        
+            .servicios{
+                height:1100px;
+                display: grid;
+                grid-template-areas: "tServicios tServicios tServicios"
+                "imagenDis imagenDis imagenDis"
+                "tituloDis tituloDis tituloDis"
+                "imagenVideo imagenVideo imagenVideo"
+                "tituloVideo tituloVideo tituloVideo"
+                "imagenWeb imagenWeb imagenWeb"
+                "tituloWeb tituloWeb tituloWeb";
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 120px repeat(7,1fr) ;
+            }
+
+            .titulosGrandes{
+                font-size: 5rem;
+            }
+
+            .tituloPequeño{
+                font-size: 3rem;
+            }
+        
+            .logoR .logoFooter{
+                width:150px;
+                 height:150px
+            }
+        
+            .imgConocenos{
+               width: 100%;
+               height: 700px; 
+               margin-top: 20px; 
+            }
+        
+            #button-up{
+                width: 35px;
+                height: 35px;
+                font-size: 15px;
+            }
+        
+            .footer__grid{
+                height:480px;
+                display: grid;
+                grid-template-areas: "logoR logoR"
+                "vendemosD vendemosD"
+                "contactanosD contactanosD"
+                "redesS redesS"
+                "copyright copyright";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 150px 120px 90px 60px 1fr;
+                align-content: start;
+            }
+            .copy{
+                margin-top:20px
+            }
+        
+            .clientes{
+                grid-template-areas:"clientes"
+                                    "lGiltyle"
+                                    "lCesar"
+                                    "lRussian" ;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px repeat(3,1fr);
+            }
+        
+            .lGiltyle{
+                width: 90%;
+                height: 90%;
+            }
+        
+            .lCesar{
+                width: 90%;
+                height: 90%;
+            }
+        
+            .lRussian{
+                width: 90%;
+                height: 90%;
+            }
+        
+            .trabajos{
+                display:grid;
+                grid-template-areas:
+                "tips tips"
+                "vBrela vBrela"
+                "gBrela gBrela"
+                "herbaplant herbaplant"
+                "certificado certificado"
+                "cGiltyle cGiltyle"
+                "lBrela lBrela"
+                "lShaw lShaw"
+                "gTriptico gTriptico"
+                "gRevista gRevista"
+                "uniformeG uniformeG";
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(3,300px) 100px 200px repeat(3,300px) 500px repeat(2,300px);
+                gap: 20px;
+            }
+            .margen__cards{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        
+            .texto{
+                font-size: 1.5rem;
+                text-align: start
+            }
+            .textoConocenos{
+                text-align: start  
+            }
+        }
 
     }
 }

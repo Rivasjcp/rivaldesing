@@ -25,14 +25,15 @@ html {
     background: black;
     width: 100%;
     overflow-x: hidden;
-    /* Header Comienzo */
+    /* Header */
     /* Header Final */
-    /* Presentacion Comienzo */
+    /* Presentacion */
     /* Presentacion Final */
-    /* Video Comienzo */
+    /* Video */
     /* Video final */
-    /* Servicios Comienzo */
+    /* Servicios */
     /* Servicios final */
+    /* Boton de ir hacia arriba */
     /* footer comienzo */
     /* footer final */
     /* contacto */
@@ -70,13 +71,15 @@ html {
     html body .presentacion__grid {
       display: grid;
       grid-template-rows: 50% 1fr;
-      grid-template-columns: 55% 1fr;
-      background-image: url("../images/portada.jpg");
+      grid-template-columns: 50% 1fr;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/portada.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
       width: 100%;
       height: 800px; }
     html body .logo {
       align-self: center;
-      margin: 50px 0 0 50px;
+      margin: 0 0 0 50px;
       grid-column: 1/3;
       grid-row: 1/2; }
     html body .boton__contactoGrid {
@@ -126,14 +129,11 @@ html {
 
 @keyframes efecto__servicios {
   0% {
-    width: 450px;
-    height: 450px; }
+    transform: translate(0); }
   50% {
-    width: 300px;
-    height: 300px; }
+    transform: translate(100px); }
   100% {
-    width: 150px;
-    height: 150px; } }
+    transform: translate(0px); } }
     html body .textoComp {
       font: 1.5rem "Retroica", sans-serif;
       text-align: justify;
@@ -158,11 +158,9 @@ html {
     html body .imagenDis {
       grid-area: imagenDis;
       justify-self: center;
-      animation-name: efecto__servicios;
-      animation-iteration-count: initial;
-      animation-timing-function: ease-in;
-      animation-duration: 1s;
-      animation-delay: 5s; }
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      animation-duration: 5s; }
     html body .imagenVideo {
       grid-area: imagenVideo;
       justify-self: center; }
@@ -182,10 +180,44 @@ html {
       margin: 20px 40px 0 40px; }
     html body .botonEquipo {
       border: solid 2px black;
-      background: #e93b00;
+      background: black;
       border-radius: 10px;
       width: 180px;
       height: 30px; }
+    html body .botonEquipo:hover {
+      background: #e93b00; }
+    html body .personalizarCard {
+      background: linear-gradient(225deg, #3d3b3b, #e93b00);
+      border-radius: 10px;
+      box-shadow: 1px 5px 15px black; }
+    html body .personalizarCard:hover {
+      transform: scale(1.05);
+      transition: all 300ms ease; }
+    html body .boton__contacto:hover {
+      transform: scale(1.1);
+      transition: all 300ms ease; }
+    html body .imgConocenos {
+      animation-name: efecto__servicios; }
+    html body #button-up {
+      width: 55px;
+      height: 55px;
+      background: #e93b00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      border-radius: 50%;
+      font-size: 20px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      border: 4px solid transparent;
+      transition: all 300ms ease;
+      text-decoration: none;
+      transform: scale(0); }
+    html body #button-up:hover {
+      transform: scale(1.1); }
     html body footer {
       height: 250px;
       background: white;
@@ -232,6 +264,13 @@ html {
       display: block;
       margin: 20px;
       margin-top: 0; }
+    html body .contactoImg {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/marketing.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    html body .contactoContenido {
+      background: rgba(16, 16, 16, 0.65);
+      border-radius: 15px; }
     html body .clientes {
       background-color: #e93b00;
       padding: 5px;
@@ -245,13 +284,25 @@ html {
     html body .lGiltyle {
       grid-area: lGiltyle;
       justify-self: center; }
+    html body .lGiltyle:hover {
+      background: linear-gradient(rgba(5, 5, 5, 0.75), rgba(5, 5, 5, 0.75));
+      transform: scale(1.05);
+      transition: all 300ms ease; }
     html body .lCesar {
       grid-area: lCesar;
       justify-self: center; }
+    html body .lCesar:hover {
+      background: linear-gradient(rgba(5, 5, 5, 0.75), rgba(5, 5, 5, 0.75));
+      transform: scale(1.05);
+      transition: all 300ms ease; }
     html body .lRussian {
       grid-area: lRussian;
       justify-self: center;
       border: 5px black; }
+    html body .lRussian:hover {
+      background: linear-gradient(rgba(5, 5, 5, 0.75), rgba(5, 5, 5, 0.75));
+      transform: scale(1.05);
+      transition: all 300ms ease; }
     html body .trabajos {
       display: grid;
       grid-template-areas: "tips vBrela gBrela" "herbaplant herbaplant herbaplant" "certificado certificado certificado" "cGiltyle lBrela lShaw" "gTriptico gRevista gRevista" "uniformeG uniformeG uniformeG";
@@ -262,6 +313,10 @@ html {
       grid-area: aTrabajos; }
     html body .tips {
       grid-area: tips; }
+    html body .tips:hover {
+      background: linear-gradient(rgba(233, 58, 0, 0.75), rgba(233, 58, 0, 0.75));
+      transform: scale(1.05);
+      transition: all 300ms ease; }
     html body .vBrela {
       grid-area: vBrela; }
     html body .gBrela {
@@ -300,7 +355,7 @@ html {
     html body .seccion {
       text-align: end;
       margin-top: 60px; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 750px) {
       html body .logoNav {
         width: 140px;
         height: 50px; }
@@ -343,7 +398,7 @@ html {
         margin-right: 10px;
         text-align: start; }
       html body .servicios {
-        height: 1700px;
+        height: 1600px;
         display: grid;
         grid-template-areas: "tServicios tServicios tServicios" "imagenDis imagenDis imagenDis" "tituloDis tituloDis tituloDis" "imagenVideo imagenVideo imagenVideo" "tituloVideo tituloVideo tituloVideo" "imagenWeb imagenWeb imagenWeb" "tituloWeb tituloWeb tituloWeb";
         grid-template-columns: 1fr 1fr 1fr;
@@ -356,10 +411,13 @@ html {
         width: 150px;
         height: 150px; }
       html body .imgConocenos {
-        width: 350px;
-        height: 350px;
-        margin-left: 5px;
+        width: 100%;
+        height: 300px;
         margin-top: 20px; }
+      html body #button-up {
+        width: 35px;
+        height: 35px;
+        font-size: 15px; }
       html body .footer__grid {
         height: 480px;
         display: grid;
@@ -369,6 +427,118 @@ html {
         align-content: start; }
       html body .copy {
         margin-top: 20px; }
+      html body .clientes {
+        grid-template-areas: "clientes" "lGiltyle" "lCesar" "lRussian";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px repeat(3, 1fr); }
+      html body .lGiltyle {
+        width: 90%;
+        height: 90%; }
+      html body .lCesar {
+        width: 90%;
+        height: 90%; }
+      html body .lRussian {
+        width: 90%;
+        height: 90%; }
+      html body .trabajos {
+        display: grid;
+        grid-template-areas: "tips tips" "vBrela vBrela" "gBrela gBrela" "herbaplant herbaplant" "certificado certificado" "cGiltyle cGiltyle" "lBrela lBrela" "lShaw lShaw" "gTriptico gTriptico" "gRevista gRevista" "uniformeG uniformeG";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 300px) 100px 200px repeat(3, 300px) 500px repeat(2, 300px);
+        gap: 20px; }
+      html body .margen__cards {
+        margin-left: 10px;
+        margin-right: 10px; }
+      html body .texto {
+        font-size: 1.5rem;
+        text-align: start; }
+      html body .textoConocenos {
+        text-align: start; } }
+    @media only screen and (min-width: 751px) and (max-width: 990px) {
+      html body .logoNav {
+        width: 140px;
+        height: 50px; }
+      html body .titulosNav {
+        margin-top: 50px;
+        font-size: 2rem; }
+      html body .titulosServ {
+        font-size: 4rem; }
+      html body .logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: auto;
+        width: 300px;
+        height: 300px; }
+      html body .presentacion__grid {
+        display: grid;
+        grid-template-rows: 300px 30% 3%;
+        grid-template-columns: 1fr;
+        height: 700px; }
+      html body .boton__contactoGrid {
+        grid-row: 3/4;
+        grid-column: 1/2; }
+      html body .titulo__vendemosGrid {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center; }
+      html body .titulo__vendemos {
+        font-size: 4rem;
+        text-align: start;
+        margin: auto; }
+      html body .video {
+        width: 90%;
+        height: 720; }
+      html body .textoComp {
+        font-size: 2rem;
+        text-align: start; }
+      html body .textoVideo {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: start; }
+      html body .servicios {
+        height: 1100px;
+        display: grid;
+        grid-template-areas: "tServicios tServicios tServicios" "imagenDis imagenDis imagenDis" "tituloDis tituloDis tituloDis" "imagenVideo imagenVideo imagenVideo" "tituloVideo tituloVideo tituloVideo" "imagenWeb imagenWeb imagenWeb" "tituloWeb tituloWeb tituloWeb";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 120px repeat(7, 1fr); }
+      html body .titulosGrandes {
+        font-size: 5rem; }
+      html body .tituloPequeño {
+        font-size: 3rem; }
+      html body .logoR .logoFooter {
+        width: 150px;
+        height: 150px; }
+      html body .imgConocenos {
+        width: 100%;
+        height: 700px;
+        margin-top: 20px; }
+      html body #button-up {
+        width: 35px;
+        height: 35px;
+        font-size: 15px; }
+      html body .footer__grid {
+        height: 480px;
+        display: grid;
+        grid-template-areas: "logoR logoR" "vendemosD vendemosD" "contactanosD contactanosD" "redesS redesS" "copyright copyright";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 120px 90px 60px 1fr;
+        align-content: start; }
+      html body .copy {
+        margin-top: 20px; }
+      html body .clientes {
+        grid-template-areas: "clientes" "lGiltyle" "lCesar" "lRussian";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px repeat(3, 1fr); }
+      html body .lGiltyle {
+        width: 90%;
+        height: 90%; }
+      html body .lCesar {
+        width: 90%;
+        height: 90%; }
+      html body .lRussian {
+        width: 90%;
+        height: 90%; }
       html body .trabajos {
         display: grid;
         grid-template-areas: "tips tips" "vBrela vBrela" "gBrela gBrela" "herbaplant herbaplant" "certificado certificado" "cGiltyle cGiltyle" "lBrela lBrela" "lShaw lShaw" "gTriptico gTriptico" "gRevista gRevista" "uniformeG uniformeG";
